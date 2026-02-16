@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "dataset": "realestate-mock-v1",
+    "currency": "BRL",
+    "city": "Sao Paulo",
+    "is_mock": true
+  },
+  "properties": [
+    {
+      "id": "prop_001",
+      "title": "Apartamento 2 dorm proximo ao metro",
+      "area": "Vila Aurora",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 620000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parking": 1,
+      "property_type": "apartment",
+      "availability": "ready",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_002",
+      "title": "Apartamento compacto com varanda",
+      "area": "Vila Aurora",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 540000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": 1,
+      "property_type": "apartment",
+      "availability": "ready",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_003",
+      "title": "Casa de vila reformada",
+      "area": "Parque Sol",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 890000,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parking": 2,
+      "property_type": "house",
+      "availability": "ready",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_004",
+      "title": "Apartamento 3 dorm lazer completo",
+      "area": "Vila Aurora",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 770000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parking": 2,
+      "property_type": "apartment",
+      "availability": "ready",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_005",
+      "title": "Studio para investimento",
+      "area": "Centro Norte",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 390000,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": 0,
+      "property_type": "studio",
+      "availability": "ready",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_006",
+      "title": "Cobertura duplex com terraco",
+      "area": "Vila Aurora",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 1180000,
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "parking": 2,
+      "property_type": "apartment",
+      "availability": "ready",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_007",
+      "title": "Apartamento 2 dorm recem entregue",
+      "area": "Vila Aurora",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 690000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parking": 1,
+      "property_type": "apartment",
+      "availability": "under_construction",
+      "source": "mock_dataset"
+    },
+    {
+      "id": "prop_008",
+      "title": "Casa terrea com quintal",
+      "area": "Parque Sol",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "price_brl": 740000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "parking": 2,
+      "property_type": "house",
+      "availability": "ready",
+      "source": "mock_dataset"
+    }
+  ]
+}

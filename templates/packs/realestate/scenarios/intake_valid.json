@@ -1,0 +1,28 @@
+{
+  "scenario_id": "intake_valid",
+  "description": "Capture a minimal lead card with safe fields only.",
+  "input": {
+    "channel": "whatsapp",
+    "message": "Cliente Ana quer comprar apartamento de ate 750 mil na Vila Aurora, 2 quartos, pode visitar na quinta a tarde.",
+    "timestamp": "2026-02-16T13:30:00Z"
+  },
+  "expected_output": {
+    "lead_card_schema": "../schemas/lead-card.schema.json",
+    "must_pass_schema": true,
+    "required_fields_present": [
+      "lead_id",
+      "client_name",
+      "intent",
+      "budget_range",
+      "preferred_areas",
+      "next_action"
+    ],
+    "forbidden_fields_absent": [
+      "cpf",
+      "renda",
+      "documento",
+      "rg",
+      "cnh"
+    ]
+  }
+}

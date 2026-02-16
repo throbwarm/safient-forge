@@ -1,0 +1,42 @@
+{
+  "id": "{{vertical_id}}",
+  "name": "{{Vertical Name}} Golden Pack",
+  "version": "0.1.0",
+  "workspace_overlays": [
+    "workspace-pack/SOUL.append.md",
+    "workspace-pack/USER_FIELDS.json",
+    "workspace-pack/data",
+    "workspace-pack/skills"
+  ],
+  "tool_policy": {
+    "allow": [
+      "read",
+      "write",
+      "calendar",
+      "gmail",
+      "drive"
+    ],
+    "deny": [
+      "exec",
+      "browser",
+      "apply_patch"
+    ]
+  },
+  "entrypoints": {
+    "intake": "{{vertical}}-intake",
+    "search": "{{vertical}}-search",
+    "schedule": "{{vertical}}-schedule",
+    "proposal": "{{vertical}}-proposal",
+    "followup": "{{vertical}}-followup"
+  },
+  "compliance": {
+    "forbid_sensitive_chat_collection": true,
+    "forbidden_chat_fields": [
+      "cpf",
+      "renda",
+      "documento",
+      "rg",
+      "cnh"
+    ]
+  }
+}

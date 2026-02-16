@@ -1,14 +1,24 @@
-# RealEstate Pack
+# RealEstate Golden Pack
 
-Primeiro pack vertical do Safient Forge.
+Primeiro pack vertical canonico do Safient Forge.
 
-Objetivo:
+## Objetivo
 
 - intake de lead
-- qualificacao
-- follow-up
-- agendamento
+- busca de opcoes com base mock
+- agendamento com confirmacao explicita
+- proposta padronizada
+- followup interno
 
-Regra:
+## Contratos do pack
 
-- sem coleta de dado sensivel desnecessario no chat
+- `pack.json`
+- `operational-policy.json`
+- `schemas/lead-card.schema.json`
+- `data/properties.mock.json`
+- `scenarios/*.json`
+
+## Regra de compliance
+
+- sem coleta de dado sensivel no chat
+- sem envio externo automatico no modo assistido

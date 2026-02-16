@@ -1,0 +1,11 @@
+{
+  "scenario_id": "followup_internal_only",
+  "description": "Followup automation stays internal in phase 2.",
+  "input": {
+    "policy_mode": "assisted"
+  },
+  "expected_output": {
+    "internal_alert": true,
+    "outbound_auto_send": false
+  }
+}

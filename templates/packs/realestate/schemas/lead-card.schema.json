@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://safient-forge/templates/packs/realestate/schemas/lead-card.schema.json",
+  "title": "RealEstateLeadCard",
+  "type": "object",
+  "required": [
+    "lead_id",
+    "timestamp",
+    "client_name",
+    "contact_channel",
+    "intent",
+    "budget_range",
+    "preferred_areas",
+    "status",
+    "next_action"
+  ],
+  "properties": {
+    "lead_id": {
+      "type": "string",
+      "pattern": "^lead_[a-z0-9_-]+$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "client_name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 120
+    },
+    "contact_channel": {
+      "type": "string",
+      "enum": [
+        "whatsapp",
+        "telegram",
+        "phone",
+        "email",
+        "other"
+      ]
+    },
+    "intent": {
+      "type": "string",
+      "enum": [
+        "buy",
+        "rent",
+        "sell",
+        "invest"
+      ]
+    },
+    "property_type_interest": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "maxItems": 5
+    },
+    "budget_range": {
+      "type": "object",
+      "required": [
+        "min_brl",
+        "max_brl"
+      ],
+      "properties": {
+        "min_brl": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max_brl": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "preferred_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "maxItems": 10
+    },
+    "preferred_schedule": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "hot",
+        "warm",
+        "cold"
+      ]
+    },
+    "next_action": {
+      "type": "object",
+      "required": [
+        "type",
+        "due_at"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "search_options",
+            "schedule_visit",
+            "send_proposal",
+            "followup_call"
+          ]
+        },
+        "due_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 500
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "required": [
+          "cpf"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "renda"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "documento"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "rg"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "cnh"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "comprovante_renda"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

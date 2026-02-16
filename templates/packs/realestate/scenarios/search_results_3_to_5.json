@@ -1,0 +1,29 @@
+{
+  "scenario_id": "search_results_3_to_5",
+  "description": "Search should return a focused list of options from mock data.",
+  "input": {
+    "intent": "buy",
+    "property_type_interest": [
+      "apartment"
+    ],
+    "budget_range": {
+      "min_brl": 500000,
+      "max_brl": 800000
+    },
+    "preferred_areas": [
+      "Vila Aurora"
+    ],
+    "limit": 5
+  },
+  "expected_output": {
+    "result_count_min": 3,
+    "result_count_max": 5,
+    "must_use_data_source": "../data/properties.mock.json",
+    "must_include_fields": [
+      "id",
+      "title",
+      "price_brl",
+      "area"
+    ]
+  }
+}

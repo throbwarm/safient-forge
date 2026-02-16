@@ -1,0 +1,15 @@
+{
+  "scenario_id": "intake_valid",
+  "description": "Capture valid intake without sensitive fields.",
+  "input": {
+    "message": "Replace with vertical example"
+  },
+  "expected_output": {
+    "must_pass_schema": true,
+    "forbidden_fields_absent": [
+      "cpf",
+      "renda",
+      "documento"
+    ]
+  }
+}

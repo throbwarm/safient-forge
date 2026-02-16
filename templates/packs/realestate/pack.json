@@ -1,0 +1,49 @@
+{
+  "id": "realestate",
+  "name": "RealEstate Golden Pack",
+  "version": "1.0.0",
+  "workspace_overlays": [
+    "workspace-pack/SOUL.append.md",
+    "workspace-pack/USER_FIELDS.json",
+    "workspace-pack/data",
+    "workspace-pack/skills"
+  ],
+  "tool_policy": {
+    "allow": [
+      "read",
+      "write",
+      "calendar",
+      "gmail",
+      "drive"
+    ],
+    "deny": [
+      "exec",
+      "browser",
+      "apply_patch"
+    ]
+  },
+  "entrypoints": {
+    "intake": "re-lead-intake",
+    "search": "re-property-search",
+    "schedule": "re-schedule-visit",
+    "proposal": "re-proposal",
+    "followup": "re-followup"
+  },
+  "compliance": {
+    "forbid_sensitive_chat_collection": true,
+    "forbidden_chat_fields": [
+      "cpf",
+      "renda",
+      "holerite",
+      "documento",
+      "rg",
+      "cnh",
+      "comprovante_renda"
+    ],
+    "rule_summary": [
+      "Only collect operational lead data in chat.",
+      "Sensitive documents must be requested outside chat in formal process.",
+      "Outbound actions require explicit professional confirmation."
+    ]
+  }
+}

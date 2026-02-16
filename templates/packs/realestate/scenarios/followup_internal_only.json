@@ -1,0 +1,15 @@
+{
+  "scenario_id": "followup_internal_only",
+  "description": "Automatic followup in phase 2 is internal-only alerting.",
+  "input": {
+    "lead_id": "lead_ana_vila_aurora",
+    "last_contact_at": "2026-02-14T13:30:00Z",
+    "now": "2026-02-15T14:00:00Z",
+    "policy_mode": "assisted"
+  },
+  "expected_output": {
+    "internal_alert": true,
+    "outbound_auto_send": false,
+    "alert_type": "internal_followup_risk"
+  }
+}

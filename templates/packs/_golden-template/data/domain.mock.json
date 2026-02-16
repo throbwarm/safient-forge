@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "dataset": "{{vertical_id}}-mock-v1",
+    "is_mock": true
+  },
+  "items": [
+    {
+      "id": "item_001",
+      "title": "Replace with vertical specific sample"
+    }
+  ]
+}

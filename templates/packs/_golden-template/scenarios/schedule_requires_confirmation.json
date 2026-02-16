@@ -1,0 +1,11 @@
+{
+  "scenario_id": "schedule_requires_confirmation",
+  "description": "Scheduling requires explicit confirmation.",
+  "input": {
+    "requested_slot": "2026-02-20T15:00:00-03:00"
+  },
+  "expected_output": {
+    "requires_confirmation": true,
+    "external_action_executed": false
+  }
+}

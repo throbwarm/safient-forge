@@ -1,0 +1,11 @@
+{
+  "scenario_id": "proposal_template_output",
+  "description": "Proposal output follows approved template.",
+  "input": {
+    "lead_id": "lead_sample"
+  },
+  "expected_output": {
+    "template_id": "{{vertical_id}}_proposal_v1",
+    "send_requires_confirmation": true
+  }
+}

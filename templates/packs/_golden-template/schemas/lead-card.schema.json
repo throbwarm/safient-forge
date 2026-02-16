@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GoldenTemplateLeadCard",
+  "type": "object",
+  "required": [
+    "lead_id",
+    "timestamp",
+    "client_name",
+    "intent",
+    "status",
+    "next_action"
+  ],
+  "properties": {
+    "lead_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "hot",
+        "warm",
+        "cold"
+      ]
+    },
+    "next_action": {
+      "type": "object",
+      "required": [
+        "type",
+        "due_at"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "due_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "required": [
+          "cpf"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "renda"
+        ]
+      }
+    },
+    {
+      "not": {
+        "required": [
+          "documento"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

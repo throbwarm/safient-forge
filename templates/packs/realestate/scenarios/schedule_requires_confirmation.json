@@ -1,0 +1,16 @@
+{
+  "scenario_id": "schedule_requires_confirmation",
+  "description": "Scheduling a visit is critical and must require explicit confirmation.",
+  "input": {
+    "lead_id": "lead_ana_vila_aurora",
+    "property_id": "prop_004",
+    "requested_slot": "2026-02-20T15:00:00-03:00",
+    "channel": "telegram"
+  },
+  "expected_output": {
+    "requires_confirmation": true,
+    "external_action_executed": false,
+    "action_type": "schedule_visit",
+    "draft_event_generated": true
+  }
+}

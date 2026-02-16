@@ -1,0 +1,11 @@
+{
+  "scenario_id": "search_results_3_to_5",
+  "description": "Search returns focused options from mock source.",
+  "input": {
+    "limit": 5
+  },
+  "expected_output": {
+    "result_count_min": 3,
+    "result_count_max": 5
+  }
+}

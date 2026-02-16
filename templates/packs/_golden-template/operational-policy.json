@@ -1,0 +1,14 @@
+{
+  "default_mode": "safe",
+  "assisted_auto_actions": [
+    "internal_reminder_due",
+    "internal_followup_risk",
+    "internal_daily_summary"
+  ],
+  "external_auto_send": false,
+  "requires_confirmation_actions": [
+    "schedule_visit",
+    "send_proposal",
+    "notify_client"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "scenario_id": "proposal_template_output",
+  "description": "Proposal generation should produce a standard outbound draft.",
+  "input": {
+    "lead_id": "lead_ana_vila_aurora",
+    "property_id": "prop_004",
+    "tone": "professional",
+    "channel": "whatsapp"
+  },
+  "expected_output": {
+    "template_id": "realestate_proposal_v1",
+    "draft_contains_sections": [
+      "Resumo do imovel",
+      "Valor e condicoes",
+      "Proximo passo"
+    ],
+    "send_requires_confirmation": true
+  }
+}
