@@ -1,0 +1,8 @@
+{
+  "realestate": {
+    "packs": [
+      "core",
+      "realestate"
+    ]
+  }
+}
